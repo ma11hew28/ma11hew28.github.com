@@ -1,20 +1,22 @@
-body {
-  font-family: Lucida Grande;
-  margin: 0;
-  text-align: center;
-}
-
-main {
+body > div:first-child {
   margin: 0 auto;
-  max-width: 100%;
-  width: 720px;
-}
-
-main > h1 {
-  font-size: 1.5em;
-  font-weight: normal;
-}
-
-main > img {
+  max-width: 540px;
   width: 100%;
+}
+
+dt {
+  float: left;
+  font-weight: bold;
+}
+
+dd {
+  margin: 0.5em 0 0.5em 9em;
+}
+
+li > p {
+  margin-bottom: 0;
+}
+
+footer {
+  margin: 1.34em 0;
 }
