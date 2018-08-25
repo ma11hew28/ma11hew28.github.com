@@ -4,6 +4,11 @@ body > div:first-child {
   width: 100%;
 }
 
+header > p:first-child {
+  float: left;
+  margin: 0 8px 0 0;
+}
+
 dt {
   float: left;
   font-weight: bold;
@@ -17,6 +22,6 @@ li > p {
   margin-bottom: 0;
 }
 
-footer {
-  margin: 1.34em 0;
+main {
+  margin-bottom: 1.5em;
 }
