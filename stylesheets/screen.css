@@ -1,27 +1,15 @@
+a {
+  text-decoration: none;
+}
+
 body > div:first-child {
+  font: 16px times;
   margin: 0 auto;
-  max-width: 540px;
-  width: 100%;
+  max-width: 480px;
+  padding: 0 1.67vw 0;
 }
 
-header > p:first-child {
+main > p:nth-child(2) {
   float: left;
-  margin: 0 8px 0 0;
-}
-
-dt {
-  float: left;
-  font-weight: bold;
-}
-
-dd {
-  margin: 0.5em 0 0.5em 9em;
-}
-
-li > p {
-  margin-bottom: 0;
-}
-
-main {
-  margin-bottom: 1.5em;
+  margin: 0 12px 0 0;
 }
