@@ -2,14 +2,38 @@ a {
   text-decoration: none;
 }
 
-body > div:first-child {
-  font: 16px times;
+body {
+  font: 16px/1.5 Arial, sans-serif;
+  margin: 8px;
+}
+
+body > div {
   margin: 0 auto;
   max-width: 480px;
-  padding: 0 1.67vw 0;
+  min-width: 300px;
+}
+
+footer {
+  border-top: 1px solid #eee;
+  color: gray;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+main {
+  border-bottom: 1px solid #9a9a9a;
+}
+
+main > a:first-child {
+  display: block;
+  float: left;
+  height: 80px;
+  margin: 0.25em 1em 0 0;
+  width: 80px;
 }
 
 main > p:nth-child(2) {
-  float: left;
-  margin: 0 12px 0 0;
+  min-height: 80px;
 }
