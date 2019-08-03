@@ -20,6 +20,7 @@ footer {
 
 main {
   border-bottom: 1px solid #9a9a9a;
+  padding-bottom: 0.8125em;
 }
 
 main > a:first-child {
@@ -42,5 +43,9 @@ p {
   h1 {
     font-size: 1.4em;
     margin: 1rem 0 1rem;
+  }
+
+  main {
+    padding-bottom: 0.3125em;
   }
 }
