@@ -44,12 +44,6 @@ main > p:nth-child(3) > strong {
   top: -7px;
 }
 
-main > p:nth-child(3) > svg {
-  left: 1px;
-  position: relative;
-  top: 3px;
-}
-
 p {
   line-height: 1.5;
 }
