@@ -35,15 +35,6 @@ main > p:nth-child(2) {
   min-height: 80px;
 }
 
-main > p:nth-child(3) {
-  height: 24px;
-}
-
-main > p:nth-child(3) > strong {
-  position: relative;
-  top: -7px;
-}
-
 p {
   line-height: 1.5;
 }
