@@ -25,9 +25,9 @@ main {
 
 main > a:first-of-type {
   display: block;
-  float: left;
+  float: right;
   height: 80px;
-  margin: 0.25em 1em 0 0;
+  margin: 0.25em 0 0 1em;
   width: 80px;
 }
 
@@ -41,7 +41,7 @@ nav li {
 }
 
 nav li + li {
-  margin-left: 1.75em;
+  margin-left: 15px;
 }
 
 nav ul {
@@ -50,6 +50,16 @@ nav ul {
 
 p {
   line-height: 1.5;
+}
+
+ul.photos {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+ul.photos > li + li {
+  margin-left: 15px;
 }
 
 @media (max-width: 430px) {
