@@ -4,48 +4,19 @@ a {
 
 body {
   font-family: Arial, sans-serif;
-  margin: 8px;
-}
-
-body > div {
   margin: 0 auto;
   max-width: 540px;
-  min-width: 300px;
+  min-width: 290px;
+  padding: 0 15px;
 }
 
-footer {
-  border-top: 1px solid #eee;
-  color: gray;
+dt {
+  float: left;
+  font-weight: bold;
 }
 
-main {
-  border-bottom: 1px solid #9a9a9a;
-  padding-bottom: 0.8125em;
-}
-
-main > a:first-of-type {
-  display: block;
-  float: right;
-  height: 80px;
-  margin: 0.25em 0 0 1em;
-  width: 80px;
-}
-
-nav a {
-  color: black;
-}
-
-nav li {
-  display: inline-block;
-  font-size: 1.25em;
-}
-
-nav li + li {
-  margin-left: 15px;
-}
-
-nav ul {
-  padding: 0;
+dd {
+  margin: 0.5em 0 0.5em 11em;
 }
 
 p {
@@ -62,8 +33,12 @@ ul.photos > li + li {
   margin-left: 15px;
 }
 
-@media (max-width: 430px) {
-  main {
-    padding-bottom: 0.3125em;
+@media (max-width: 540px) {
+  h1 {
+    font-size: 1.405em;
+  }
+
+  h2 {
+    font-size: 1.270em;
   }
 }
