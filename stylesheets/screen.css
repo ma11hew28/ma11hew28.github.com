@@ -37,6 +37,11 @@ ul.photos > li + li {
   margin-left: 15px;
 }
 
+video {
+  height: auto;
+  width: 100%;
+}
+
 @media (max-width: 640px) {
   h1 {
     font-size: 1.405em;
