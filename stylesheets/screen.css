@@ -27,18 +27,35 @@ p {
   line-height: 1.5;
 }
 
-ul.photos {
-  display: flex;
-  list-style: none;
-  padding: 0;
+.photos {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-ul.photos > li + li {
-  margin-left: 15px;
+.photos a {
+  color: orange;
+}
+
+.photos figure {
+  margin: 0;
+  position: relative;
+}
+
+.photos img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.photos figcaption {
+  bottom: 0;
+  position: absolute;
+  right: 3px;
 }
 
 video {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -49,5 +66,9 @@ video {
 
   h2 {
     font-size: 1.270em;
+  }
+
+  .photos figcaption {
+    font-size: max(2.5vw, 10pt);
   }
 }
