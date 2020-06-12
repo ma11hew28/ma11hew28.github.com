@@ -1,13 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto 2em;
+  max-width: 33.75em;
+  min-width: 18.125em;
+  padding: 0 15px;
+}
+
 a {
   text-decoration: none;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  max-width: 640px;
-  min-width: 290px;
-  padding: 0 15px;
+dd {
+  margin-left: 7.375em;
+}
+
+dd, dt, li, p {
+  line-height: 1.5;
+}
+
+dl {
+  columns: 15em;
 }
 
 dt {
@@ -15,16 +27,9 @@ dt {
   font-weight: bold;
 }
 
-dd {
-  margin: 0.5em 0 0.5em 11em;
-}
-
-li {
-  margin: 0.5em 0 0.5em;
-}
-
-p {
-  line-height: 1.5;
+video {
+  height: 100%;
+  width: 100%;
 }
 
 .photos {
@@ -35,6 +40,12 @@ p {
 
 .photos a {
   color: orange;
+}
+
+.photos figcaption {
+  bottom: 0;
+  position: absolute;
+  right: 0.1875em;
 }
 
 .photos figure {
@@ -48,27 +59,22 @@ p {
   width: 100%;
 }
 
-.photos figcaption {
-  bottom: 0;
-  position: absolute;
-  right: 3px;
-}
+@media (max-width: 28.125em) {
+  body {
+    margin-bottom: max(7vw, 1.404em);
+  }
 
-video {
-  height: 100%;
-  width: 100%;
-}
-
-@media (max-width: 640px) {
   h1 {
-    font-size: 1.405em;
+    font-size: max(7vw, 1.404em);
   }
 
   h2 {
-    font-size: 1.270em;
+    font-size: max(5.25vw, 1.053em);
   }
+}
 
+@media (max-width: 33.75em) {
   .photos figcaption {
-    font-size: max(2.5vw, 10pt);
+    font-size: max(2.962962vw, 0.75em);
   }
 }
