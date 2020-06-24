@@ -27,6 +27,11 @@ dt {
   font-weight: bold;
 }
 
+figure {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 video {
   height: 100%;
   width: 100%;
