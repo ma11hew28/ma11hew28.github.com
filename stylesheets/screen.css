@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0 auto 2em;
+  margin: 1.5em auto 4.5em;
   max-width: 33.75em;
   min-width: 18.125em;
   padding: 0 15px;
@@ -10,26 +10,30 @@ a {
   text-decoration: none;
 }
 
-dd {
-  margin-left: 7.375em;
-}
-
-dd, dt, li, p {
-  line-height: 1.5;
-}
-
-dl {
-  columns: 15em;
-}
-
 dt {
   float: left;
   font-weight: bold;
 }
 
+dd {
+  margin-left: 4.125em;
+}
+
+blockquote, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, li, nav, p {
+  line-height: 1.5;
+}
+
+h2#info + dl {
+  columns: 15em;
+}
+
+h2#info + dl > dd {
+  margin-left: 7.375em;
+}
+
 figure {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 video {
