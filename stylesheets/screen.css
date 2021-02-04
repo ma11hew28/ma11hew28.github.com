@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 1.5em auto 4.5em;
+  margin-block: 1.5em 4.5em;
+  margin-inline: auto;
   max-width: 33.75em;
   min-width: 18.125em;
   padding: 0 15px;
@@ -15,8 +16,7 @@ blockquote, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, li, nav, p {
 }
 
 figure {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-inline: 1em;
 }
 
 video {
@@ -24,21 +24,26 @@ video {
   width: 100%;
 }
 
-dl.one > dt {
-  float: left;
-  font-weight: bold;
+dl.p > dt {
+  display: inline;
 }
 
-dl.one > dd {
-  margin-left: 4.125em;
+dl.p > dt::after {
+  content: ":";
+}
+
+dl.p > dd {
+  display: inline;
+  margin: 0;
+}
+
+dl.p > dd::after {
+  content: "\A";
+  white-space: pre;
 }
 
 dl.col {
-  columns: 15em;
-}
-
-dl.col > dd {
-  margin-left: 7.375em;
+  column-width: 11em;
 }
 
 dd > ul {
@@ -73,12 +78,12 @@ dd > ul {
 }
 
 footer {
-  margin-top: 2em;
+  margin-block-start: 2em;
 }
 
 @media (max-width: 28.125em) {
   body {
-    margin-bottom: max(7vw, 1.404em);
+    margin-block-end: max(7vw, 1.404em);
   }
 
   h1 {
